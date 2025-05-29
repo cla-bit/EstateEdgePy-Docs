@@ -40,7 +40,7 @@ DateRangeFilter
         .. code-block:: python
 
             filter = DateRangeFilter(
-                date_column='sanction_date',
+                date_column='transfer_date',
                 start_date='2023-01-01',
                 end_date='2024-01-01'
             )
