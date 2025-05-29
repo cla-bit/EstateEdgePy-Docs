@@ -38,7 +38,7 @@ PropertyService
         .. code-block:: python
 
             service = PropertyService(client)
-            all_filters = [DateRangeFilter(), EntityFilter()]
+            all_filters = [DateRangeFilter(date_column="", start_date="", end_date=""), EntityFilter()]
             filtered_data = await service.get_filtered('MD', all_filters)
 
     .. method:: to_pandas(state, columns=None)
