@@ -51,7 +51,7 @@ Here is a simple way to get a sanction data. In this case we will be use `canada
         >>> service = PropertyService(client=client)
 
 
-*   Step 3: Call the get_filtered() method and pass a list of filters you want
+*   Step 3: Call the get_filtered() method and pass a list of filters you want. Ensure you pass thhe values for the arguments.
 
     .. code-block:: python
 
