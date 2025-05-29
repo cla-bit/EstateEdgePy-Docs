@@ -54,8 +54,8 @@ Here is a simple way to get a sanction data. In this case we will be use `canada
 
     .. code-block:: python
 
-        >>> all_filters = [DateRangeFilter(min_price=500000), NameFilter(min_bedrooms=3)]
-        >>> filtered_data = await service.get_filtered('canada', all_filters)
+        >>> all_filters = [DateRangeFilter(date_column="", start_date="", end_date=""), EntityFilter(search_terms="", columns="", match_type="partial", case_sensitive=False)]
+        >>> filtered_data = await service.get_filtered('MD', all_filters)
 
 
 *   Step 6: You can transform the `filtered_data` to dataframe.
