@@ -38,28 +38,28 @@ PropertyService
         .. code-block:: python
 
             service = PropertyService(client)
-            all_filters = [DateRangeFilter(date_column="", start_date="", end_date=""), EntityFilter()]
+            all_filters = [DateRangeFilter(date_column="", start_date="", end_date=""), EntityFilter(search_terms="", columns="", match_type="partial", case_sensitive=False)]
             filtered_data = await service.get_filtered('MD', all_filters)
 
     .. method:: to_pandas(state, columns=None)
 
-        Retrieve sanction data and convert it to a pandas DataFrame.
+        Retrieve property data and convert it to a pandas DataFrame.
 
-        Gets data for the specified agency (referred to as `state` in the method signature)
+        Gets data for the specified state (referred to as `state` in the method signature)
         and optionally selects specific columns for analysis.
 
-        :param state: The agency code to fetch data for (e.g., ``'canada_sanction'``).
+        :param state: The state code to fetch data for (e.g., ``'MD'``).
         :type state: str
         :param columns: Optional list of column names to include in the DataFrame.
                         If ``None``, all columns are included.
         :type columns: Optional[List[str]]
-        :return: A pandas DataFrame containing the sanction data.
+        :return: A pandas DataFrame containing the property data.
         :rtype: pandas.DataFrame
 
         **Example:**
 
         .. code-block:: python
 
-            service = SanctionService(client)
-            df_result = await service.to_pandas('canada_sanction', columns=['entity', 'last_name'])
+            service = PropertyService(client)
+            df_result = await service.to_pandas('NY', columns=['entity', 'last_name'])
             print(df_result.head())
