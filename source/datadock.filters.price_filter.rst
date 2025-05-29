@@ -39,6 +39,7 @@ PriceRangeFilter
         **Example:**
 
         .. code-block:: python
+
             # Sample data
             data_table = pa.table({
                 "price": [1000, 1500, 2000, 2500, 3000],
