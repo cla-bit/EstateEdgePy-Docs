@@ -11,23 +11,23 @@ PropertyService
 
 .. class:: PropertyService(client)
 
-    A service class for retrieving and processing sanction data from SanctionSightPy.
+    A service class for retrieving and processing property data from EstateEdgePy.
 
-    This class provides methods to fetch sanction data, apply filters, and convert
+    This class provides methods to fetch property data, apply filters, and convert
     the data to pandas DataFrames for easier analysis.
 
-    :param client: An authenticated client for SanctionClient API access.
+    :param client: An authenticated client for EstateEdgeClient API access.
     :type client: SanctionClient
 
-    .. method:: get_filtered(agency, filter_items=None)
+    .. method:: get_filtered(state, filter_items=None)
 
-        Retrieve sanction data for an agency with optional filtering.
+        Retrieve property data for a state with optional filtering.
 
         Fetches data from the API and applies the specified filters sequentially.
         Returns the data as a PyArrow Table or a rich viewer for efficient processing and visualization.
 
-        :param agency: The sanction agency code (e.g., ``'uk_sanctions'``).
-        :type agency: str
+        :param state: The property state code (e.g., ``'MD'``).
+        :type state: str
         :param filter_items: Optional list of filter objects to apply to the data.
         :type filter_items: Optional[List[BaseFilter]]
         :return: A PyArrow Table or RichArrowTableViewer containing the filtered data.
@@ -37,9 +37,9 @@ PropertyService
 
         .. code-block:: python
 
-            service = PropertynService(client)
-            all_filters = [DateRangeFilter(min_price=500000), NameFilter(min_bedrooms=3)]
-            filtered_data = await service.get_filtered('canada', all_filters)
+            service = PropertyService(client)
+            all_filters = [DateRangeFilter(), EntityFilter()]
+            filtered_data = await service.get_filtered('MD', all_filters)
 
     .. method:: to_pandas(state, columns=None)
 
