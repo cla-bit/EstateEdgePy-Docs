@@ -27,12 +27,12 @@ Output
 ----------------------------
 
 
-Get sanction data.
+Get property data.
 ------------------------------------
 
 In `EstateEdgePy` version 2 [v2] one can easily get data from any real estate property passed.
 
-Here is a simple way to get a sanction data. In this case we will be use `canada`.
+Here is a simple way to get a sanction data. In this case we will be use `MD`.
 
 
 **[A] First Method**
