@@ -43,6 +43,7 @@ EntityFilter
         **Example:**
 
         .. code-block:: python
+
             # Sample data
             data_table = pa.table({
                 "name": ["Alice", "Bob", "Charlie", "David", "alice", "Smith", "Johnson"],
