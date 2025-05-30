@@ -39,6 +39,10 @@ DateRangeFilter
 
         .. code-block:: python
 
+            data_table = pa.table([
+                "transfer_date": ["2023-05-12", "2023-01-01", "2022-01-10", "2024-01-01"]
+            ])
+
             filter = DateRangeFilter(
                 date_column='transfer_date',
                 start_date='2023-01-01',
