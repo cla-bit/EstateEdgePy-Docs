@@ -17,7 +17,7 @@ PropertyService
     the data to pandas DataFrames for easier analysis.
 
     :param client: An authenticated client for EstateEdgeClient API access.
-    :type client: SanctionClient
+    :type client: EstateEdgeClient
 
     .. method:: get_filtered(state, filter_items=None)
 
