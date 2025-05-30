@@ -26,7 +26,7 @@ To get started with the EstateEdgePy library, ensure the following requirements 
 
 **Target Audience**
 
-This library is intended for developers familiar with Python and real estate property data.
+This open-source library is designed for anyone working with real estate property data.
 
 To get started, refer to the :doc:`get_started` section for installation instructions and requirements.
 
