@@ -13,7 +13,7 @@ Asynchronous support:
 
 .. code-block:: python
 
-    from EstateEdgePy import VERSION
+    from EstateEdgePy import VERSION, EstateEdgeClient, PropertyService
     from EstateEdgePy.core.filters import DateRangeFilter, PriceRangeFilter, EntityFilter
 
     EstateEdgePy_version = VERSION
