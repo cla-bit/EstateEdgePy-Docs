@@ -20,7 +20,7 @@ offering enriched data display.
 
 To get started with the EstateEdgePy library, ensure the following requirements are met:
 
-* Python 3.10+
+* Python 3.13+
 
 --------------
 
